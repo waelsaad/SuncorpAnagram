@@ -1,0 +1,6 @@
+
+// MARK: - Playground
+
+"ALERT.OK" = "Ok";
+"ALERT.OOPS!" = "Oops";
+"EMPTY.TEXT.ERROR" = "Please enter source and anagram text";

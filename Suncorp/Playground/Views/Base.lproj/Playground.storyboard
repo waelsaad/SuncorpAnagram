@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Mission Gothic Regular.otf">
+            <string>MissionGothic-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Playground View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlaygroundViewController" customModule="Suncorp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="I8d-mr-cjL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Suncorp Heading" translatesAutoresizingMaskIntoConstraints="NO" id="Q5C-P2-L8d" userLabel="Heading">
+                                <rect key="frame" x="199" y="100" width="16" height="16"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jF3-i4-LSj" userLabel="Vertical Stack View">
+                                <rect key="frame" x="20" y="184.5" width="374" height="146"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rOH-sq-Fqh" userLabel="H - Source Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDo-Ze-azd">
+                                                <rect key="frame" x="0.0" y="0.0" width="95.5" height="30"/>
+                                                <fontDescription key="fontDescription" name="MissionGothic-Regular" family="Mission Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sfr-xp-5Sb">
+                                                <rect key="frame" x="125.5" y="0.0" width="248.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nHg-ch-3Mo" userLabel="H - Source Stack View">
+                                        <rect key="frame" x="0.0" y="40" width="374" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anagram Text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDk-fY-5Nl">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="30"/>
+                                                <fontDescription key="fontDescription" name="MissionGothic-Regular" family="Mission Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHj-Kk-2Dp">
+                                                <rect key="frame" x="126" y="0.0" width="248" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="64y-20-tto" userLabel="H - Source Stack View">
+                                        <rect key="frame" x="0.0" y="80" width="374" height="21"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QC-T0-qcH">
+                                                <rect key="frame" x="0.0" y="0.0" width="101" height="21"/>
+                                                <fontDescription key="fontDescription" name="MissionGothic-Regular" family="Mission Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-----------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMd-fN-DG4">
+                                                <rect key="frame" x="131" y="0.0" width="243" height="21"/>
+                                                <fontDescription key="fontDescription" name="MissionGothic-Regular" family="Mission Gothic" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="5Hh-6P-yIK" userLabel="H - Source Stack View">
+                                        <rect key="frame" x="0.0" y="111" width="374" height="35"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTz-Bu-mtn">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="35"/>
+                                                <color key="backgroundColor" red="1" green="0.85329120508409817" blue="0.03588951607044355" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="Vn0-2p-1WO"/>
+                                                    <constraint firstAttribute="height" constant="35" id="uaY-TT-rqX"/>
+                                                </constraints>
+                                                <state key="normal" title="Clear">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J27-Qx-6JU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51t-0T-FIg">
+                                                <rect key="frame" x="190" y="0.0" width="184" height="35"/>
+                                                <color key="backgroundColor" red="0.98344165086746216" green="0.87236744165420532" blue="0.17211407423019409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Check Anagram">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqn-Pr-sC9"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dMd-fN-DG4" firstAttribute="leading" secondItem="dHj-Kk-2Dp" secondAttribute="leading" constant="5" id="fgz-7D-MHf"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anagram Checker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GM-3c-lZl">
+                                <rect key="frame" x="20" y="146" width="201.5" height="29.5"/>
+                                <fontDescription key="fontDescription" name="MissionGothic-Regular" family="Mission Gothic" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7GM-3c-lZl" secondAttribute="trailing" symbolic="YES" id="7wm-rk-oCC"/>
+                            <constraint firstItem="Q5C-P2-L8d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="100" id="8x7-2x-ONx"/>
+                            <constraint firstItem="I8d-mr-cjL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="B6u-dK-Bet"/>
+                            <constraint firstItem="I8d-mr-cjL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DAs-PX-0TG"/>
+                            <constraint firstAttribute="bottom" secondItem="I8d-mr-cjL" secondAttribute="bottom" id="E84-eU-YgL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jF3-i4-LSj" secondAttribute="trailing" constant="20" id="Gge-ck-LKA"/>
+                            <constraint firstAttribute="trailing" secondItem="I8d-mr-cjL" secondAttribute="trailing" id="NMe-AC-38A"/>
+                            <constraint firstItem="jF3-i4-LSj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QF5-Le-uZt"/>
+                            <constraint firstItem="jF3-i4-LSj" firstAttribute="top" secondItem="7GM-3c-lZl" secondAttribute="bottom" constant="9" id="Vfe-UA-64m"/>
+                            <constraint firstItem="7GM-3c-lZl" firstAttribute="top" secondItem="Q5C-P2-L8d" secondAttribute="bottom" constant="30" id="b2D-zn-AUu"/>
+                            <constraint firstItem="Q5C-P2-L8d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="clt-Lz-fvG"/>
+                            <constraint firstItem="7GM-3c-lZl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gOX-on-HUW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="anagramTextField" destination="dHj-Kk-2Dp" id="NWk-Ao-3Kl"/>
+                        <outlet property="checkButton" destination="51t-0T-FIg" id="Eac-fl-Ne5"/>
+                        <outlet property="clearButton" destination="sTz-Bu-mtn" id="Xg4-cO-P2j"/>
+                        <outlet property="headingImageView" destination="Q5C-P2-L8d" id="BV0-Cq-APR"/>
+                        <outlet property="resultLabel" destination="dMd-fN-DG4" id="iyV-wz-2ya"/>
+                        <outlet property="sourceTextField" destination="sfr-xp-5Sb" id="63Y-nE-rXx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background" width="474" height="841"/>
+        <image name="Suncorp Heading" width="305" height="94"/>
+    </resources>
+</document>
